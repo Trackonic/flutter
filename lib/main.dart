@@ -16,14 +16,14 @@ class MyWidget extends StatelessWidget {
      // home:HomePage(),
       themeMode: ThemeMode.dark,
       theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
+        primarySwatch: Colors.purple,
         primaryTextTheme: GoogleFonts.latoTextTheme()
         ,),
          
       
       darkTheme: ThemeData(
         brightness: Brightness.light),
-        initialRoute: "/",
+        initialRoute:  MyRoutes.homeRoute,
         routes:{
           "/":(context) => LoginPage(),
           MyRoutes.homeRoute:(context) => HomePage(),
